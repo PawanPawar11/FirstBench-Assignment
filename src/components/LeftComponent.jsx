@@ -4,26 +4,24 @@ import { CiCircleInfo } from "react-icons/ci";
 
 const LeftComponent = () => {
   return (
-    <div className="bg-blue-500 p-4 flex-[3] font-Poppins">
-      <div className="rounded-md p-4 bg-gray-600">
+    <div className="pl-16 pr-6 py-10 bg-[#F9FAFB]  flex-[3] font-Poppins">
+      <div className="rounded-xl p-4 bg-[#F7F6FC] border-[1px] border-[#30394765]">
         {/* first part */}
-        <div className="bg-violet-700 flex flex-col items-center mb-10">
-          <img
-            className="size-40 bg-pink-800"
-            src="/completedTasks.png"
-            alt=""
-          />
-          <h3 className="text-2xl">Your Result!</h3>
-          <p>All your insights & details in one place</p>
+        <div className="flex flex-col items-center mb-10">
+          <img className="size-40" src="/completedTasks.png" alt="" />
+          <h3 className="text-3xl font-bold text-[#5a5fbc]">Your Result!</h3>
+          <p className="text-[1.1rem] text-[#3039479c]">
+            All your insights & details in one place
+          </p>
         </div>
 
-        {/* inner second part */}
-        <div className="bg-orange-950 p-4 rounded-lg">
+        {/* Insider second part */}
+        <div className="p-5 border-[1px] border-[#30394765] bg-[#FFFFFF] rounded-lg">
           {/* second part */}
-          <div className="flex items-center justify-center bg-amber-700 p-2 gap-3">
-            <BsClipboardCheck className="size-10 p-2 rounded-md bg-violet-300" />
+          <div className="flex items-center justify-between bg-[#F7F6FC] rounded-md p-2 ">
+            <BsClipboardCheck className="size-14 p-3 rounded-md bg-[#DBD8F7]" />
             <div className="flex flex-col items-center gap-1">
-              <p className="bg-[#5a5fbc] text-white px-2 rounded-2xl">
+              <p className="bg-[#5a5fbc] text-white px-2 rounded-2xl text-[12.5px]">
                 YOU'VE PASSED
               </p>
               <div className="flex font-bold font-Montserrat">
@@ -34,15 +32,15 @@ const LeftComponent = () => {
               </div>
             </div>
             <div className="rightLine border-r border-2 h-14 border-[#e1e2e8]"></div>
-            <div className="text-white flex flex-col items-center bg-red-600">
+            <div className="text-white flex flex-col items-center">
               <span className="bg-[#059794] px-2 py-[2px] rounded-md">76%</span>
-              <p>ACCURACY</p>
+              <p className="text-[#059794]">ACCURACY</p>
             </div>
           </div>
 
           {/* third part */}
-          <div className="p-1 bg-amber-200 mt-10">
-            <div className="flex items-center justify-start bg-lime-600 p-2 gap-3">
+          <div className="p-2 bg-[#F7F6FC] rounded-lg mt-10">
+            <div className="flex items-center justify-start p-2 gap-3">
               <div className="size-16 p-[3px] rounded-sm bg-violet-300">
                 <img
                   src="/user.jpeg"
@@ -50,7 +48,7 @@ const LeftComponent = () => {
                   alt=""
                 />
               </div>
-              <div className="flex flex-col items-center gap-1 bg-yellow-900">
+              <div className="flex flex-col items-center gap-1">
                 <p className="text-bold text-[#5a5fbc]  px-2 rounded-2xl">
                   Top Score
                 </p>
@@ -63,8 +61,8 @@ const LeftComponent = () => {
               </div>
             </div>
             <div className="bottomLine border-b-2 border-black"></div>
-            <div className="text-white flex items-center justify-between p-2 bg-red-600">
-              <p>
+            <div className="text-white flex items-center justify-between p-2 ">
+              <p className="text-black">
                 <span className="text-[#606062]">By</span>
                 &nbsp;Parth Akotkar
               </p>
@@ -75,28 +73,29 @@ const LeftComponent = () => {
           </div>
 
           {/* fourth part */}
-          <div className="bg-red-500 mt-4">
+          <div className="mt-4 ml-1">
             <h1 className="font-semibold text-xl">Improve your Marks</h1>
             <p className="text-slate-500">
               Improve your score by practicing more.
             </p>
-            <div className="bg-[#5a5fbc] py-1 text-center mt-3 rounded-md text-white text-xl">
+            <div className="bg-[#5a5fbc] py-1 text-center mt-8 rounded-lg text-white text-xl">
               Practice more
             </div>
           </div>
         </div>
+
         {/* fifth part */}
-        <div className="bg-yellow-400 top-10 mt-10 rounded-lg p-4">
-          <h1 className="text-3xl font-bold">Revisit Paper</h1>
-          <p className="mt-2">
+        <div className="border-[1px] border-[#30394765] bg-[#FFFFFF] top-10 mt-10 p-4 rounded-lg">
+          <h1 className="font-bold text-2xl">Revisit Paper</h1>
+          <p className="text-slate-500 mt-3">
             Challenge your friends by simply sharing a ink to this test
           </p>
-          <button className="bg-[#5a5fbc] px-24 py-2 text-center mt-3 rounded-md text-white text-xl flex items-center justify-center mx-auto">
+          <button className="bg-[#5a5fbc] px-20 py-1 text-center m-8 rounded-md text-white text-xl flex gap-2 items-center justify-center mx-auto">
             <GoFileSymlinkFile />
             Visit
           </button>
-          <p className="flex items-start justify-start gap-2 mt-3 text-slate-400">
-            <CiCircleInfo className=" text-2xl" />
+          <p className="flex items-start justify-center gap-2 text-slate-400 text-[13px]">
+            <CiCircleInfo className="size-7" />
             Instructions for how to upload your handwritten material in given
           </p>
         </div>
