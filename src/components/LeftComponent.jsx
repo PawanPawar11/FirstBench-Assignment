@@ -4,7 +4,7 @@ import { CiCircleInfo } from "react-icons/ci";
 
 const LeftComponent = () => {
   return (
-    <div className="pl-16 pr-6 py-10 bg-[#F9FAFB]  flex-[3] font-Poppins">
+    <div className="pl-16 pr-6 py-10 bg-[#F9FAFB]  flex-[2] font-Poppins">
       <div className="rounded-xl p-4 bg-[#F7F6FC] border-[1px] border-[#30394765]">
         {/* first part */}
         <div className="flex flex-col items-center mb-10">
@@ -22,7 +22,7 @@ const LeftComponent = () => {
             <BsClipboardCheck className="size-14 p-3 rounded-md bg-[#DBD8F7]" />
             <div className="flex flex-col items-center gap-1">
               <p className="bg-[#5a5fbc] text-white px-2 rounded-2xl text-[12.5px]">
-                YOU'VE PASSED
+                YOU&apos;VE PASSED
               </p>
               <div className="flex font-bold font-Montserrat">
                 <h3 className="text-3xl">136</h3>
