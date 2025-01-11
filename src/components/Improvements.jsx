@@ -40,22 +40,23 @@ const Improvements = () => {
     },
   ];
   return (
-    <div className="w-[30%] flex flex-col gap-5 p-4 bg-gray-800 rounded-xl">
-      <div className="flex w-full bg-blue-800 rounded-lg p-1 gap-5">
-        <IoIosTrendingUp className=" bg-amber-600 text-2xl" />
-        {/* relative top-1 */}
-        <p className="text-[1.1rem] bg-lime-800">Improvements</p>
+    <div className="w-[30%] flex flex-col gap-5 p-4 bg-[#FFFFFF] border-[1px] border-[#30394765] rounded-xl">
+      <div className="flex w-full text-[#5b5c60] rounded-lg p-1 gap-5">
+        <IoIosTrendingUp className="text-2xl relative top-[0.2rem]" />
+        <p className="text-[1.1rem]">Improvements</p>
       </div>
 
-      <h2 className="text-xl font-bold">Subject Understanding</h2>
+      <h2 className="text-xl font-bold text-slate-900">
+        Subject Understanding
+      </h2>
 
-      <ul className="flex flex-wrap gap-2 bg-slate-600">
+      <ul className="flex flex-wrap gap-2">
         {ImprovementLinks.map((link, index) => {
           return (
             <li
               key={index}
               style={{ backgroundColor: link.color }}
-              className="px-2 py-[1px] rounded-xl"
+              className="px-2 text-white py-[1px] rounded-xl"
             >
               {link.title}
             </li>

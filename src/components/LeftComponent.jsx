@@ -10,7 +10,7 @@ const LeftComponent = () => {
         <div className="flex flex-col items-center mb-10">
           <img className="size-40" src="/completedTasks.png" alt="" />
           <h3 className="text-3xl font-bold text-[#5a5fbc]">Your Result!</h3>
-          <p className="text-[1.1rem] text-[#3039479c]">
+          <p className="text-[0.95rem] text-[#3039479c]">
             All your insights & details in one place
           </p>
         </div>
@@ -18,10 +18,10 @@ const LeftComponent = () => {
         {/* Insider second part */}
         <div className="p-5 border-[1px] border-[#30394765] bg-[#FFFFFF] rounded-lg">
           {/* second part */}
-          <div className="flex items-center justify-between bg-[#F7F6FC] rounded-md p-2 ">
+          <div className="flex items-center justify-between bg-[#F7F6FC] rounded-md p-2 gap-2">
             <BsClipboardCheck className="size-14 p-3 rounded-md bg-[#DBD8F7]" />
             <div className="flex flex-col items-center gap-1">
-              <p className="bg-[#5a5fbc] text-white px-2 rounded-2xl text-[12.5px]">
+              <p className="bg-[#5a5fbc] text-white px-2 rounded-2xl text-[9px]">
                 YOU&apos;VE PASSED
               </p>
               <div className="flex font-bold font-Montserrat">
@@ -61,12 +61,12 @@ const LeftComponent = () => {
               </div>
             </div>
             <div className="bottomLine border-b-2 border-black"></div>
-            <div className="text-white flex items-center justify-between p-2 ">
+            <div className="text-white flex items-center justify-between p-2">
               <p className="text-black">
                 <span className="text-[#606062]">By</span>
                 &nbsp;Parth Akotkar
               </p>
-              <span className="bg-[#059794] px-2 py-[2px] rounded-2xl">
+              <span className="bg-[#059794] text-[11px] px-2 py-[2px] rounded-2xl">
                 92% ACCURACY
               </span>
             </div>

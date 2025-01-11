@@ -8,14 +8,14 @@ import Ruler from "./Ruler";
 
 const RightComponent = () => {
   return (
-    <div className="bg-green-500 flex-[8] pr-7">
-      <div className="flex items-center justify-between bg-red-600 p-4 pl-0 gap-5">
+    <div className="bg-[#F9FAFB] flex-[8] pr-7">
+      <div className="flex items-center justify-between p-4 pl-0 gap-5">
         <CompareActivity />
         <CompareActivity />
         <CompareActivity />
       </div>
 
-      <div className="bg-teal-600 p-4 pl-0 flex gap-3">
+      <div className="p-4 pl-0 flex gap-3">
         <Improvements />
         <ResponseTime />
         <ApproachData />

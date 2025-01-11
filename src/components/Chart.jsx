@@ -42,39 +42,43 @@ const Chart = () => {
   ];
   const ChartLinks = [
     {
-      time: 10,
+      time: "10",
     },
     {
-      time: 15,
+      time: "15",
     },
     {
-      time: 30,
+      time: "30",
     },
     {
-      time: 45,
+      time: "45",
     },
   ];
   return (
-    <div className="border-2 relative rounded-md border-red-700 mt-5 h-[23.5rem] flex flex-col gap-5 p-4 w-full">
-      <div className="flex w-full bg-blue-800 rounded-lg p-1 gap-5">
-        <IoGitCompareOutline className=" bg-amber-600 text-2xl" />
-        <p className="text-[1.1rem] bg-lime-800">Compare Accuracy</p>
+    <div className="relative rounded-md bg-[#FFFFFF] border-[1px] border-[#30394765] mt-5 h-[23.5rem] flex flex-col gap-5 p-4 w-full">
+      <div className="flex w-full text-[#5b5c60]  rounded-lg p-1 gap-5">
+        <IoGitCompareOutline className=" relative top-[0.2rem] text-2xl" />
+        <p className="text-[1.1rem]">Compare Accuracy</p>
       </div>
 
-      <p className="text-lg inline-block -rotate-90 text-center bg-purple-600 w-52 relative top-40 -left-20">
+      <p className="text-lg inline-block -rotate-90 text-center text-slate-900 w-52 relative top-[9.5rem] -left-20">
         Accuracy
       </p>
 
-      <div className="border-2 border-amber-700 w-[80%] absolute top-[8rem] right-[3.4rem]"></div>
+      <div className="border-4 border-[#ABEDE9] w-[80%] absolute top-[8rem] right-[3.4rem]"></div>
 
-      <div className="flex justify-evenly bg-red-400 gap-5">
+      <div className="flex justify-evenly gap-5">
         {ChartLinks.map((link, index) => (
           <p
             key={index}
-            className="flex items-center bg-slate-600 px-1 py-0 rounded-sm relative z-999"
+            className={` flex items-center px-1 py-0 rounded-md relative z-999 ${
+              link.time === "15"
+                ? "bg-[#1cb9b4] text-white"
+                : "bg-[#E0E2E5] text-slate-600"
+            }`}
           >
             {link.time}
-            <sub>MIN</sub>
+            <sub className="text-[0.7rem]">MIN</sub>
           </p>
         ))}
       </div>
