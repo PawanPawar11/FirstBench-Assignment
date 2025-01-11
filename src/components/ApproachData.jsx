@@ -30,7 +30,7 @@ const ApproachData = () => {
           <li key={index}>
             <div className="bg-[#FFFFFF] border-[1px] border-violet-200 p-2 rounded-lg">
               <div className="flex justify-start gap-2">
-                <p className="bg-violet-200 text-[#5A5FBC] text-sm font-bold p-1 rounded-sm">
+                <p className="bg-violet-100 text-[#5A5FBC] text-sm font-bold p-1 rounded-sm">
                   {link.percentage}
                 </p>
                 <p className="text-[#5A5FBC] text-md font-semibold flex items-center">

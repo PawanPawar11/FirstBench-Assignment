@@ -44,10 +44,13 @@ const NavBar = () => {
 
           <ul className="flex items-center justify-center gap-6 text-white text-[1.1rem]">
             {navLinks.map((link, index) => {
+              const isMockTest = link.name === "Mock Test";
               return (
                 <li
                   key={index}
-                  className="flex relative top-1 items-center justify-center gap-2"
+                  className={`flex relative top-1 items-center justify-center gap-2 ${
+                    isMockTest ? "text-[#1cb9b4]" : ""
+                  }`}
                 >
                   {link.icon}
                   {link.name}

@@ -21,7 +21,7 @@ const LeftComponent = () => {
           <div className="flex items-center justify-between bg-[#F7F6FC] rounded-md p-2 gap-2">
             <BsClipboardCheck className="size-14 p-3 rounded-md bg-[#DBD8F7]" />
             <div className="flex flex-col items-center gap-1">
-              <p className="bg-[#5a5fbc] text-white px-2 rounded-2xl text-[9px]">
+              <p className="bg-[#5a5fbc] text-white px-2 rounded-2xl text-[8px]">
                 YOU&apos;VE PASSED
               </p>
               <div className="flex font-bold font-Montserrat">
@@ -66,7 +66,7 @@ const LeftComponent = () => {
                 <span className="text-[#606062]">By</span>
                 &nbsp;Parth Akotkar
               </p>
-              <span className="bg-[#059794] text-[11px] px-2 py-[2px] rounded-2xl">
+              <span className="bg-[#059794] text-[10px] px-2 py-[2px] rounded-2xl ml-1">
                 92% ACCURACY
               </span>
             </div>
@@ -75,7 +75,7 @@ const LeftComponent = () => {
           {/* fourth part */}
           <div className="mt-4 ml-1">
             <h1 className="font-semibold text-xl">Improve your Marks</h1>
-            <p className="text-slate-500">
+            <p className="text-slate-500 text-[0.82rem]">
               Improve your score by practicing more.
             </p>
             <div className="bg-[#5a5fbc] py-1 text-center mt-8 rounded-lg text-white text-xl">
